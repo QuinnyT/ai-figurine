@@ -1,0 +1,144 @@
+
+.InformationContainerPos {
+  position: fixed;
+  right: 32px;
+  top: 14vh;
+  /* width:90px; */
+  /* width: 140px;
+  height: auto; */
+  
+  bottom: 10vh;
+  /* height: 76vh; */
+  width: 8vw;
+  backdrop-filter: blur(22.5px);
+  /* background: rgba(5, 11, 14, 0.8); */
+  z-index: 1000;
+  user-select: none;
+}
+
+
+.rightMenuTitle {
+  /* width: 90%; */
+  /* margin-bottom: 16px; */
+  text-align: center;
+  /* height: 60px; */
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #CBCACA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+ }
+
+ .objectId {
+  width: 80%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 12px;
+ }
+
+
+.editor {
+  /* height: 100%; */
+  /* width: 100%;
+  overflow-y: scroll;
+  position: relative;
+  overflow-x: hidden !important; */
+  /* margin: 16px; */
+  /* height: 300px; */
+
+  border-radius: 10px;
+  background-color: #CBCACA;
+
+  /* height: -webkit-calc(100vh - 290px);
+  height: calc(100vh - 290px); */
+  position: fixed;
+  width: 8vw;
+  height: 61vh;
+  bottom: 2vh;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s ease;
+}
+
+.editor-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.optionsContainer {
+  margin-top: 10px;
+
+  /* text-align: center; */
+}
+
+.seletorItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  cursor: pointer;
+  background-size: contain;
+  background-position: center;
+}
+
+.editor-controller {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.cancelIcon {
+  width: 50px;
+  height: 50px;
+}
+
+.rightPanelTriggerIcon {
+  
+  position: fixed;
+  /* left: 22px; */
+  right: calc(7px + 4vw);
+  bottom: 14vh;
+  width: 50px;
+  height: 50px;
+  z-index: 2000;
+  cursor: pointer;
+}
+
+.selectorColorPickerUI{
+  position: absolute;
+  top: 200px;
+  right: calc(100px + 4vw);
+  /* width: 30px; */
+}
+
+.selectorContainerPos {
+  position: absolute;
+  top: 200px;
+  right: calc(100px + 4vw);
+  border-radius: 10px;
+  background-color: #CBCACA;
+  padding: 10px;
+}
+
+.selector-container {
+  position: relative;
+}

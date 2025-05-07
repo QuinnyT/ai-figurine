@@ -1,0 +1,326 @@
+.buttonContainer {
+    position: absolute;
+    bottom: 20px;
+    left: 32px;
+    width: calc(100% - 64px);
+    width: -webkit-calc(100% - 64px);
+    text-align: center;
+}
+
+.buttonContainer .buttonLeft {
+    float: left;
+}
+
+.buttonContainer .buttonRight {
+    float: Right;
+}
+
+.buttonContainer .buttonCenter {
+    margin: 0 8px;
+}
+
+.buttonContainer::after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.buttonContainer button {
+    min-width: 120px;
+}
+
+/* previously in Editor.jsx */
+.sideMenu {
+  position: fixed;
+  left: 32px;
+  top: 14vh;
+  bottom: 10vh;
+  height: 76vh;
+  width: 7vw;
+  /* height: -webkit-calc(100vh - 176px);
+  height: calc(100vh - 176px); */
+  backdrop-filter: blur(22.5px);
+  /* background: rgba(5, 11, 14, 0.8); */
+  /* background-color: #CBCACA; */
+  z-index: 1000;
+  user-select: none;
+}
+
+.sideMenuContent {
+  height: 100%;
+}
+
+
+.leftMenuTitle {
+  /* width: 90%; */
+  /* margin-bottom: 2vh; */
+  text-align: center;
+  height: 7vh;
+  border-radius: 10px;
+  background-color: #CBCACA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ 
+.scrollContainer {
+  /* width: 100%; */
+  overflow-y: scroll;
+  position: relative;
+  overflow-x: hidden !important;
+  height: calc(100% - 76px);
+  
+  border-radius: 10px;
+  background-color: #CBCACA;
+
+  display: flex;
+  flex-direction: column;
+}
+.scrollContainerOptions{
+  width: 90%;
+  overflow-y: scroll;
+  position: relative;
+  overflow-x: hidden !important;
+  margin: 16px;
+  height: calc(100% - 100px);
+  height: 90%;
+  scrollbar-width: none;
+}
+.bottomLine {
+  background: rgb(0, 149, 100);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(0, 149, 100, 0) 0%,
+    rgba(8, 234, 160, 1) 50%,
+    rgba(0, 149, 100, 0) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(0, 149, 100, 0) 0%,
+    rgba(8, 234, 160, 1) 50%,
+    rgba(0, 149, 100, 0) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(0, 149, 100, 0) 0%,
+    rgba(8, 234, 160, 1) 50%,
+    rgba(0, 149, 100, 0) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#009564",endColorstr="#009564",GradientType=1);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+}
+.editor-tab {
+  user-select: none;
+  flex: 1;
+  position: relative;
+  text-align: center;
+  padding: 0.5em;
+}
+.editorButton {
+  padding: 0.5em;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-size: contain;
+  background-position: center;
+}
+.editorText{
+  /* color: rgb(255, 255, 255); */
+  text-transform: capitalize;
+  max-width: 100px;
+  white-space: normal;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+.editor-controller {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin-bottom: 80px;
+}
+
+/* previously in Selector.jsx */
+.selectorContainerPos {
+  position: fixed;
+  top: 98px;
+  left: calc(10% + 10px);
+  height: -webkit-calc(100vh - 300px);
+  height: calc(100vh - 300px);
+  backdrop-filter: blur(22.5px);
+  /* background: rgba(5, 11, 14, 0.8); */
+  background-color: #CBCACA;
+
+  z-index: 1000;
+  border-radius: 10px;
+}
+
+.selector-container {
+  user-select: none;
+  flex: 1;
+  width: 220px;
+  position: relative;
+}
+.selector-container-column {
+  user-select: none;
+  flex: 1;
+  flex-direction: column;
+  width: 220px;
+  position: relative;
+}
+
+.selectorButton {
+  padding: 0.25em;
+  display: block;
+  position: relative;
+  opacity: 1;
+  float: left;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+.selectorColorPickerUI{
+  position: absolute;
+  right: -20px;
+  width: 30px;
+  top: 55px;
+}
+.selectorColorPickerButton{
+  backdrop-filter: blur(22.5px);
+  background: rgba(5, 11, 14, 0.8);
+  width:40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+.selectorPickerTabs {
+  position: absolute;
+  right: -40px;
+  top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap:2px;
+}
+.selectorColorPickerImg{
+  width:20px;
+  height: 20px;
+  position: relative;
+  margin: auto;
+}
+.uploadContainer {
+  text-align: center;
+  width: 80%;
+  position: relative;
+  margin: 16px;
+  margin-right: 10px;
+  padding-right: 6px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.uploadButton{
+  margin: auto;
+  text-align: center;
+  outline-color: #3b434f;
+  color: #d1d7df;
+  outline-width: 2px;
+  outline-style: solid;
+  background-color: #1e2530;
+  height: 30px;
+  width: 80%;
+  font-family: "TTSC-Bold";
+  text-transform: uppercase !important;
+  font-size:x-small;
+  display: flex;
+  justify-content: center;
+  align-items : center;
+  user-select: none;
+  cursor: pointer;
+}
+
+.relativeBox{
+  position: relative;
+}
+
+.blendshapeGroup{
+  flex-direction: column;
+  display: flex;
+  color: white;
+}
+
+
+.topMenu {
+  position: fixed;
+  width: 96%;
+  display: flex;
+  justify-content: space-between;
+  align-items : center;
+  top: 10px;
+  left: 2%;
+  /* padding: 1.5rem; */
+}
+
+.topBox {
+  display: flex;
+  align-items : center;
+  gap: 20px;
+}
+
+.bigIcon {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.smallIcon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.cancelIcon {
+  width: 50px;
+  height: 50px;
+}
+
+.leftPanelTriggerIcon {
+  position: fixed;
+  /* left: 22px; */
+  left: calc(7px + 3.5vw);
+  bottom: 14vh;
+  width: 50px;
+  height: 50px;
+  z-index: 2000;
+  cursor: pointer;
+}
+
+.editor {
+  position: fixed;
+  width: 7vw;
+  height: 65.5vh;
+  bottom: 2vh;
+  /* left: 32px; */
+  border-radius: 10px;
+  background-color: #CBCACA;
+
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s ease;
+}
+
+.editor-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
