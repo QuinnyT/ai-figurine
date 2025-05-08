@@ -33,9 +33,10 @@ yarn
 yarn dev
 ```
 Ensure environment variables are correctly configured in `backend/.env`  
-`OPENAI_API_KEY=your_openai_key`
-`OPENAI_BASE_URL=your_openai_base_url`
-`ELEVEN_LABS_API_KEY=your_elevenlabs_key`
+`OPENAI_API_KEY=your_openai_key`  
+`OPENAI_BASE_URL=your_openai_base_url`  
+`ELEVEN_LABS_API_KEY=your_elevenlabs_key`  
+
 ### 3. Set Up the Frontend
 ```bash
 cd frontend
