@@ -137,7 +137,6 @@ export default function TestBottomDisplayMenu({loadedAnimationName, randomize}){
               })}
 
             </div>
-          </div>)}
           <img className={styles.triggerIcon} src="ui/animation.svg" onClick={handleClickTriggerIcon} />
         </div>
     );

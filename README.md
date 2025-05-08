@@ -23,8 +23,8 @@ This project contains two main parts:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://xxxxx
-cd xxxx
+git clone https://github.com/QuinnyT/ai-figurine.git
+cd ai-figurine
 ```
 ### 2. Set Up the Backend
 ```bash
@@ -33,14 +33,12 @@ yarn
 yarn dev
 ```
 Ensure environment variables are correctly configured in `backend/.env`  
-`
-VITE_OPENAI_API_KEY=your_openai_key
-OPENAI_BASE_URL=your_openai_base_url
-VITE_ELEVENLABS_API_KEY=your_elevenlabs_key
-`
+`OPENAI_API_KEY=your_openai_key`
+`OPENAI_BASE_URL=your_openai_base_url`
+`ELEVEN_LABS_API_KEY=your_elevenlabs_key`
 ### 3. Set Up the Frontend
 ```bash
-cd ../frontend
+cd frontend
 npm install
 npm run get-assets    # Download default figurine assets
 npm run dev
